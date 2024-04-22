@@ -1,324 +1,275 @@
-.wraper{
-    padding: 16px 32px;
-}
-.home{
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+.section01 {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0px 80px;
+    overflow: visible; /* Allow overflow for the parent container */
+    height: 100vh;
     display: flex;
-    flex-direction: column;
-    gap: 22px;
-}
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
 
-.headline{
-    width: 100%;
-    font-size: 32px;
-    max-width: 280px;
-    line-height: 100%;
-}
-
-.home p{
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
-    color: #1D2C4B;
-}
-
-.home div{
-    margin: 10px 0px;
-}
-
-.home a{
-    background-color: #0065ff;
-    color: white;
-    font-size: 14px;
-    padding: 15px 20px;
-    border-radius: 8px;
-}
-
-.containerActions{
-    padding: 32px;
-    background-color: #eaf9ff;
-    margin: 20px auto;
-    width: 100%;
+  .containerFold01{
     display: flex;
-    flex-direction: column;
-    gap: 18px;
-    border-radius: 16px;
-}
+    gap: 60px;
+  }
+  
+  .containerMan {
+    /* background-color: #FF7105; */
+    width: 250px;
+    height: 406px;
+    border-radius: 40.25px;
+    overflow: visible; /* Allow overflow */
+    margin-left: 25px;
+    margin-top: -10px;
+  }
+  
+  .imageWrapper {
+    width: 360px; /* Set the desired width for the image */
+    overflow: visible; /* Allow overflow for the image */
+    
+  }
 
-.containerActions h2{
-    font-size: 24px;
-    text-align: left;
-    font-weight: 500;
-}
+  .img01{
+    width: 440px;
+    display: block;
+    margin: 40px auto  0px -80px;
+  }
 
-.knowMore{
-    background-color: #cce8fe;
-    padding: 12px 20px;
-    border-radius: 8px;
-    color: #0065ff;
-    max-width: 130px;
-}
-
-.containerContent{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.containerContent h2{
-    height: 25px;
-}
-
-.containerActions02{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-bottom: 35px;
-}
-
-.containerActions02 h2{
-    font-size: 24px;
-    text-align: left;
-    font-weight: 500;
-    line-height: 100%
-}
-
-.iconSection{
+  .headlineDiv{
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin: 20px auto;
-}
+  }
 
-.iconSection div{
+  .headlineDiv p{
+    color: #1E1E1E    ;
+  }
+
+  .headlineDiv h1{
+    font-size: 45px;
+    line-height: 110%;
+    font-weight: 700;
+  }
+  
+  .headlineDiv h1 span{
+    color: #FF7105;
+  }
+
+  .btn{
+    background-color: #FF7105;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .containerSect{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
+    gap: 70px;
+  }
 
-.iconSection div h2{
-    font-size: 18px;
+  .containerRect{
+    width: 310px;
+    background-color: #FBFBFE;
+    padding: 60px 30px 17px 40px;
+    border-radius: 9px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); /* Drop shadow with specified parameters */
+}
+  
+.containerRect span{
+    color: #FF7105;
+    font-size: 20px;
+    line-height: 110%;
     font-weight: 600;
 }
 
-.btn{
-    background-color: #0065ff;
-    color: white;
-    font-size: 14px;
-    padding: 15px 20px;
-    border-radius: 8px;
-    width: 180px;
-}
+.border {
+    position: relative; /* Establish positioning context */
+    width: 100%; /* Set the width */
+    padding-bottom: 24px;
+  }
+  
+  .border::after {
+    content: ''; /* Create a pseudo-element for the border */
+    position: absolute; /* Position the border */
+    bottom: 0; /* Align the border to the bottom */
+    left: 0; /* Align the border to the left */
+    width: 100%; /* Set the width to fill the container */
+    height: 1px; /* Set the height for the border */
+    background: linear-gradient(to right, black 70%, #E7E7E7 70%); /* Linear gradient for the border */
+  }
+  
+  .border::before {
+    content: ''; /* Create a pseudo-element for the circle */
+    position: absolute; /* Position the circle */
+    bottom: -5px; /* Adjust position to be below the border */
+    right: 72px; /* Adjust position to be at the end of the border */
+    width: 10px; /* Set the width for the circle */
+    height: 10px; /* Set the height for the circle */
+    background: black; /* Background color for the circle */
+    border-radius: 50%; /* Make the circle round */
+  }
 
-.containerActions03{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    background-color: #66aeff;
-    padding: 32px;
-    border-radius: 16px;
+  .border2 {
+    position: relative; /* Establish positioning context */
+    width: 130%; /* Set the width */
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .border2::after {
+    content: ''; /* Create a pseudo-element for the border */
+    position: absolute; /* Position the border */
+    bottom: 0; /* Align the border to the bottom */
+    left: 0; /* Align the border to the left */
+    width: 100%; /* Set the width to fill the container */
+    height: 1px; /* Set the height for the border */
+    background: linear-gradient(to right, black 70%, transparent 70%); /* Linear gradient for the border */
+  }
+  
+  .border2::before {
+    content: ''; /* Create a pseudo-element for the circle */
+    position: absolute; /* Position the circle */
+    bottom: -5px; /* Adjust position to be below the border */
+    right: 85px; /* Adjust position to be at the end of the border */
+    width: 10px; /* Set the width for the circle */
+    height: 10px; /* Set the height for the circle */
+    background: black; /* Background color for the circle */
+    border-radius: 50%; /* Make the circle round */
+  }
 
-
-}
-
-.containerActions03 h2{
+  .percent{
+    color: #A6A6A6;
     font-size: 24px;
-    text-align: left;
-    font-weight: 500;
-    line-height: 100%;
-    color: white;
-    font-size: 32px;
-    line-height: 100%;
-    margin: 10px auto;
+    text-align: right;
+    font-weight: 600;
+  }
+  
+  .divider{
+    border: 1px solid #E7E7E7;
+  }
 
-}
-
-.containerActions03 p{
-    text-align: left;
-    font-weight: 500;
-    color: white;
-    font-size: 16px;
-    line-height: 100%;
-
-}
-
-.accDiv{
+  .simbolContainer{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 22px auto;
-    border-bottom: 1px solid lightgray;
-}
+    justify-content: right;
+    margin-top: -100px;
+    margin-bottom: 20px;
 
-.accDiv div{
-    margin-bottom:15px;
-}
+  }
 
-.acc{
-    text-align: left;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 110%;
+  .simbolContainer2{
     display: flex;
-    justify-content: space-between;
-    margin: 10px 0px;
-}
+    justify-content: left;
+    margin-top: -100px;
+    margin-bottom: 20px;
+  }
 
-.arrow{
-    width: 15px;
-}
+  .simbolDiv{
+    background-color: #FF7105;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
 
-@media screen and (min-width:780px){
+  .BtnMobile{
+    display: none !important;
+  }
 
-    .wraper{
-        max-width: 1248px;
-        display: block;
-        margin: 30px auto;
-    }
-    .banner{
-        display: flex;
-        flex-direction: row;
-        gap: 55px !important;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .bannerPicture{
-        width: 635px;
-    }
-
-    .headline{
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 110%;
-
+  @media screen and (max-width:760px){
+    .section01{
+      flex-direction:column;
+      margin: 50px 10px;
+      height: 100%;
+      gap: 30px;
     }
 
-    .home{
-        width: 280px;
-        margin: 0px 35px;
+    .containerFold01 button {
+      margin: auto;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
     }
 
-    .container{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 25px;
-        max-width: 1248px;
-        margin: auto;
+    .menu{
+      display: none;
     }
 
-    .containerActions{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding: 50px 48px 50px 0px;
-        gap: 20px;
-        overflow: hidden;
-        border-radius: 16px;
-
+    .containerSect{
+      margin-top: 30px;
     }
 
-    .containerActions h2{
-        font-size: 28px;
-        line-height: 100%;
-        height: 100%;
+    .headlineDiv h1{
+      text-align: center;
+      font-size: 31px;
+      font-weight: 700;
     }
 
-    .imgItem{
-        width: 320px;
-        margin-left: -55px;
+    .broker{
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
     }
 
-    .containerContent{
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        align-items:start;
-        justify-content: left;
+    .headlineDiv{
+      text-align: center;
     }
 
-    .containerContent p{
-        line-height: 110%;
+    .headlineDiv button{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      width: 80%;
     }
 
-    .containerActions02 h2{
-        font-size: 40px;
-        line-height: 110%;
-        max-width: 600px;
-        display: block;
-        margin: auto;
+    .containerMan {
+      margin: 0px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .imageWrapper {
+      width: 100%; /* Set the desired width for the image */
+      height: 100%;
     }
 
-    .containerActions02 h2, .containerActions02 p{
-        text-align: center;
+    .img01{
+      width: 90%;
+      display: flex;
+      justify-content: center; 
+      margin: 0px;
     }
 
-    .iconSection{
-        display: flex;
-        flex-direction: row;
-        margin: 35px auto;
+    .containerFold01{
+      display: flex;
+      gap: 30px;
+      flex-direction: column-reverse;
     }
 
-    .icon{
-        display: block;
-        margin: 20px auto;
+    .subHeadline{
+      font-size: 24px;
     }
 
-    .containerActions03{
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-        align-items: center;
+    .BtnDesktop{
+      display: none !important;
     }
 
-
-    .bank{
-        width: 450px;
+    .BtnMobile{
+      display: block !important;
     }
-
-    .containerActions03 h2{
-        font-size: 48px;
-        margin: 15px auto;
-    }
-
-    .arrow{
-        width: 15px;
-    }
-
-    .faq{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .accDiv{
-        margin: 15px auto;
-        width: 750px;
-        border-bottom: 1px solid lightgray;
-        transition: 1.5s ease-in-out;
-
-    }
-
-    .accDiv div{
-        margin:0px 0px 10px 0px;
-        max-width: 750px;
-        transition: 1.5s ease-in-out;
-    }
-
-    .acc{
-        text-align: left;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 110%;
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 0px 15px 0px;
-        margin: 0px;
-    }
-
-    .acc h2{
-        font-size: 16px;
-        font-weight: 600;
-    }
-}
+  }

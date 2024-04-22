@@ -1,8 +1,9 @@
+"use client"
 import React, { useState } from "react";
 import style from "./page.module.css"
 
 const SimulationModal = () => {
-  const [modal, setModal] = useState("");
+  const [model, setModel] = useState("");
   const [cpf, setCpf] = useState("");
   const [bornDate, setBornDate] = useState("");
   const [fullName, setFullName] = useState("");
@@ -19,7 +20,7 @@ const SimulationModal = () => {
   const handleSubmit = async (e:React.FormEvent) => {
     e.preventDefault();
     const formData = {
-      modal,
+      model,
       cpf,
       bornDate,
       fullName,
@@ -34,7 +35,7 @@ const SimulationModal = () => {
       gracePeriod
     };
     try {
-      const response = await fetch("http://localhost:3000/website/proposal", {
+      const response = await fetch("http://localhost:80/api/website/proposal", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -55,15 +56,17 @@ const SimulationModal = () => {
   return (
     <div className={style.overlay}>
     <form className={style.forms} onSubmit={handleSubmit}>
-
+    <button>
+      X
+    </button>
     <div>
         <input
           type="radio"
           id="pf"
           name="modal"
           value="Pessoa Física"
-          checked={modal === "Pessoa Física"}
-          onChange={(e) => setModal(e.target.value)}
+          checked={model === "Pessoa Física"}
+          onChange={(e) => setModel(e.target.value)}
         />
         <label htmlFor="pf">Pessoa Física</label>
       </div>
@@ -73,8 +76,8 @@ const SimulationModal = () => {
           id="pj"
           name="modal"
           value="Pessoa Jurídica"
-          checked={modal === "Pessoa Jurídica"}
-          onChange={(e) => setModal(e.target.value)}
+          checked={model === "Pessoa Jurídica"}
+          onChange={(e) => setModel(e.target.value)}
         />
         <label htmlFor="pj">Pessoa Jurídica</label>
       </div>
